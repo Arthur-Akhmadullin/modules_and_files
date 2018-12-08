@@ -8,5 +8,3 @@ for files in range(1,11):
             f.write(str(random.randint(1,10)) + '\n')
         f.write(str(random.randint(1, 10)))
     f.close()
-
-""""""
