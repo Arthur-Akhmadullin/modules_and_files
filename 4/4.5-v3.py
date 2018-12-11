@@ -11,13 +11,17 @@ user_id = 1
 dictionary_users = {}
 
 for users in result:
-    if users["userId"] == user_id:
-        dictionary_users[users["userId"]] = {"tasks": 0, "completed": 0}
-        user_id += 1
-    if users["id"]:
-        dictionary_users[users["userId"]]["tasks"] += 1
-    if users["completed"]:
-        dictionary_users[users["userId"]]["completed"] += 1
+    try:
+        if users["userId"] == user_id:
+            dictionary_users[users["userId"]] = {"tasks": 0, "completed": 0}
+            user_id += 1
+        if users["id"]:
+            dictionary_users[users["userId"]]["tasks"] += 1
+        if users["completed"]:
+            dictionary_users[users["userId"]]["completed"] += 1
+    except Exception:
+        print("Возможно, ошибка в ключах файла")
+
 print("Количество уникальных пользователей =", len(dictionary_users))
 print("-------------------------------------")
 
