@@ -21,9 +21,6 @@ for users in result:
 print("Количество уникальных пользователей =", len(dictionary_users))
 print("-------------------------------------")
 
-
-
-
 for i in range(1, len(dictionary_users)+1):
     print("У пользователя", i,
           "оригинальных задач =", dictionary_users[i]["tasks"],
