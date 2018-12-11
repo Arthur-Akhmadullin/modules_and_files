@@ -7,14 +7,12 @@ result = json.loads(response.text)
 with open("file.json", "w") as f:
     json.dump(result, f, indent=2)
 
-user_id = 1
 dictionary_users = {}
 
 for users in result:
     try:
-        if users["userId"] == user_id:
+        if users["userId"] not in dictionary_users:
             dictionary_users[users["userId"]] = {"tasks": 0, "completed": 0}
-            user_id += 1
         if users["id"]:
             dictionary_users[users["userId"]]["tasks"] += 1
         if users["completed"]:
