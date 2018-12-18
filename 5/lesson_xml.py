@@ -21,7 +21,7 @@ def attrib_value(node, attribname):
             attrib_value(node[i], attribname)
     return(count)
 
-
+#sdfsdfsdfsa
 
 if __name__ == '__main__':
     text_list = []
