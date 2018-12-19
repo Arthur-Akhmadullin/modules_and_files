@@ -23,17 +23,17 @@ test_value_3 = "age"
 
 tag_value(root, test_value_1, mas)
 if array_pc == mas:
-    print("test OK")
+    print("test tag_value OK")
 mas.clear()
 
 tag_value(root, test_value_2, mas)
 if len(mas) == 0:
-    print("test OK")
+    print("test tag_value OK")
 mas.clear()
 
 tag_value(root, test_value_3, mas)
 if array_root[1] == mas[0]:
-    print("test OK")
+    print("test tag_value OK")
 
 
 if attrib_value(root, "name") == 7:
