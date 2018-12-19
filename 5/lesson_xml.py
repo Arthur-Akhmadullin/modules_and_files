@@ -19,7 +19,6 @@ def attrib_value(node, attribname):
             sum += 1
         if len(node[i]) > 0:
             sum += attrib_value(node[i], attribname)
-
     return(sum)
 
 
