@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64386563-3be4-4a12-ae4e-bafaabecf73a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_xml.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,14 +38,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="3126" />
-          <entry key="txt" value="12" />
+          <entry key="py" value="3884" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="3126" />
+          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="Python" value="3884" />
         </counts>
       </usages-collector>
     </session>
@@ -54,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson_xml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="266">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -120,8 +121,8 @@
         <option value="$PROJECT_DIR$/123.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/1plus2.py" />
-        <option value="$PROJECT_DIR$/lesson_xml.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/lesson_xml.py" />
       </list>
     </option>
   </component>
@@ -164,7 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.lesson_xml">
     <configuration name="1plus2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -279,8 +280,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.lesson_xml" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.1plus2" />
         <item itemvalue="Python.5.3.1-v2" />
         <item itemvalue="Python.5.3.1" />
@@ -312,7 +313,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545156851435</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge from xml">
+      <created>1545240764068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545240764068</updated>
+    </task>
+    <task id="LOCAL-00004" summary="delete space">
+      <created>1545240816670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545240816670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -324,7 +339,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.7347447" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,20 +359,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="in xml" />
     <MESSAGE value="???" />
-    <option name="LAST_COMMIT_MESSAGE" value="???" />
+    <MESSAGE value="merge from xml" />
+    <MESSAGE value="delete space" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete space" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/123.py" />
     <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/1plus2.py" />
     <entry file="file://$PROJECT_DIR$/5.3.1.py" />
-    <entry file="file://$PROJECT_DIR$/demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
@@ -368,10 +378,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lesson_xml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="266">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
         </state>
       </provider>
     </entry>
