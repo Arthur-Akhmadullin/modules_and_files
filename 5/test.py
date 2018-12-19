@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ETree
-from lesson_xml import tag_value, attrib_value, count
+from lesson_xml import tag_value, attrib_value
 
 xml1 = ETree.parse('demo.xml')
 root = xml1.getroot()
