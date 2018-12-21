@@ -10,12 +10,13 @@ def show_nodes(i):
     return(array)
 
 
-def tag_value(node, tagname, array):
+def tag_value(node, tagname):
+    array = []
     for i in range(len(node)):
         if node[i].tag == tagname:
             array.append(node[i].text)
         if len(node[i]) > 0:
-            tag_value(node[i], tagname, array)
+            array += tag_value(node[i], tagname)
     return(array)
 
 
@@ -40,10 +41,10 @@ if __name__ == '__main__':
 
     print("------------------------------------")
     # Задание 5.3.2 - Список значений для конкретного тега
-    text_list = []
+
     tag = "pc_item"
-    tag_value(root, tag, text_list)
-    print("Список значений:", text_list)
+
+    print("Список значений:", tag_value(root, tag))
 
     print("------------------------------------")
     # Задание 5.3.3 - Количестов узлов
