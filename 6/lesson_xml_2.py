@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ETree
 
-xml1 = ETree.parse('demo_copy.xml')
+xml1 = ETree.parse('demo_full.xml')
 root = xml1.getroot()
 
 def find_nodes(tag):
