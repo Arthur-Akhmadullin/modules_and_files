@@ -12,12 +12,11 @@ array_dirs = []
 array_files = []
 
 structure_catalog(array_dirs, array_files)
-print("Список каталогов:")
+
+print("СПИСОК КАТАЛОГОВ:")
 for dir in array_dirs:
     print(dir)
-print("-----------------")
-print("Список файлов:")
+
+print("СПИСОК ФАЙЛОВ:")
 for file in array_files:
     print(file)
-
-print(os.path.split('../3-1-1.txt'))
