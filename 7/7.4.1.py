@@ -10,7 +10,6 @@ def structure_catalog(arr_dir, arr_file):
 
 array_dirs = []
 array_files = []
-
 structure_catalog(array_dirs, array_files)
 
 print("СПИСОК КАТАЛОГОВ:")
