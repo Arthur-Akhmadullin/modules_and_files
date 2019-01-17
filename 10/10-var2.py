@@ -6,6 +6,7 @@ def add_archive(name, ext):
         for root, dirs, files in os.walk("."):
             for filename in files:
                 if os.path.splitext(filename)[1] == ext:
+                    print(os.path.basename(filename))
                     archive.write(filename)
         archive.close()
 
