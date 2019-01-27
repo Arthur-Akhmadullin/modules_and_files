@@ -20,8 +20,7 @@ def sum_random_numbers(arr, nt):
         Thread(target=sum_part_array, name="Thread #%s" % (i+1), args=(part_arr, iteration_sum)).start()
         print("Thread #%s" % (i+1), iteration_sum)
 
-    print("Сумма =", round(sum(iteration_sum), 2))
-    return(iteration_sum)
+    return(round(sum(iteration_sum), 2))
 
 
 array = []
@@ -32,7 +31,7 @@ for i in range(0, number_elements_of_array):
 
 number_threads = int(input("Укажите количество потоков: "))
 
-print(sum_random_numbers(array, number_threads))
+print("Сумма = ", sum_random_numbers(array, number_threads))
 
 # Проверим через обычный цикл
 sum_common_cycle = 0
