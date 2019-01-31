@@ -5,11 +5,14 @@ from threading import Thread
 def sum_part_array(part_array, part_sum):
     part_sum.append(round(sum(elem for elem in part_array), 2))
 
+
+
 # Функция, которая делит массив на части и запускает потоки
 def sum_random_numbers(arr, nt):
     # Объявим массив для хранения результатов суммы на каждой итерации
     iteration_sum = []
 
+    thread_array = []
     # На каждой итерации выделяем часть массива для вычисления части суммы
     for i in range(nt):
         d, m = divmod(len(arr), nt)
@@ -17,8 +20,23 @@ def sum_random_numbers(arr, nt):
 
         # Объявляем поток. Результат его работы - добавление части суммы в массив
         # А также выведем результат работы каждого потока
-        Thread(target=sum_part_array, name="Thread #%s" % (i+1), args=(part_arr, iteration_sum)).start()
-        print("Thread #%s" % (i+1), iteration_sum)
+        t = Thread(target=sum_part_array, name="Thread #%s" % (i+1), args=(part_arr, iteration_sum))
+        thread_array.append(t)
+        t.start()
+
+        #print("Thread #%s" % (i+1), iteration_sum)
+
+    count = 0
+    while count != nt:
+        for i in range(len(thread_array)):
+            if thread_array[i].is_alive() == True:
+                print("Выполняется поток ", i+1)
+                continue
+            else:
+                print("Thread #%s" % (i+1), iteration_sum)
+                print("Завершен поток ", i+1)
+                count += 1
+
 
     return(round(sum(iteration_sum), 2))
 
