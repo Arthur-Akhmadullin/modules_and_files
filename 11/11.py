@@ -24,31 +24,25 @@ def sum_random_numbers(arr, nt):
         thread_array.append(t)
         t.start()
 
-        #print("Thread #%s" % (i+1), iteration_sum)
-
+    # Счетчик завершенных потоков
     count = 0
     while count != nt:
         for i in range(len(thread_array)):
             if thread_array[i].is_alive() == True:
                 print("Выполняется поток ", i+1)
-                continue
             else:
-                print("Thread #%s" % (i+1), iteration_sum)
-                print("Завершен поток ", i+1)
+                print("Завершен поток Thread #%s" % (i+1))
                 count += 1
-
 
     return(round(sum(iteration_sum), 2))
 
 
+
 array = []
 number_elements_of_array = int(input("Укажите количество чисел в массиве: "))
-
 for i in range(0, number_elements_of_array):
     array.append(round(random.uniform(1, 10), 2))
-
 number_threads = int(input("Укажите количество потоков: "))
-
 print("Сумма = ", sum_random_numbers(array, number_threads))
 
 # Проверим через обычный цикл
