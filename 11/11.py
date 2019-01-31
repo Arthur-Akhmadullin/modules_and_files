@@ -33,6 +33,7 @@ def sum_random_numbers(arr, nt):
             else:
                 print("Завершен поток Thread #%s" % (i+1))
                 count += 1
+        print("---------------")
 
     return(round(sum(iteration_sum), 2))
 
