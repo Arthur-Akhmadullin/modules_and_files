@@ -26,7 +26,7 @@ def sum_random_numbers(arr, nt):
 
     # Счетчик завершенных потоков
     count = 0
-    while count != nt:
+    while count < nt+1:
         for i in range(len(thread_array)):
             if thread_array[i].is_alive() == True:
                 print("Выполняется поток ", i+1)
