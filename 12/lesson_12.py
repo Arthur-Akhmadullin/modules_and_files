@@ -19,8 +19,6 @@ for parameter in range(number_of_processes):
     array_second_parameter.append(random.randint(4, 10))
 print("Список вторых параметров: ", array_second_parameter)
 
-
-
 #Словарь, содержащий ссылки на объект-генератор
 dict_gen = {}
 for i in range(number_of_processes):
