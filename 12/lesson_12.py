@@ -31,7 +31,7 @@ for i in range(number_of_processes):
     dict_res["id" + str(i + 1)] = None
 print("Словарь, возвращающий результаты вычислений: ", dict_res)
 
-#Количество итерация - это максимальный элемент в массиве параметров
+#Количество итераций - это максимальный элемент в массиве параметров
 max_value_of_parametres = max(array_second_parameter)
 print("Количество итераций = ", max_value_of_parametres)
 
