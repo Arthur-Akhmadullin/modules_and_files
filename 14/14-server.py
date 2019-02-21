@@ -23,15 +23,23 @@ while not stop:
         print(client_address[0] + " / " + str(client_address[1]) + ":  ", end="")
         # Из байтового представления декодируем сообщение в формат utf-8
         print(data.decode("utf-8"))
+        mes = "покидает нас"
+        if mes in data.decode("utf-8"):
+            clients_address.remove(client_address)
 
         for client in clients_address:
-            if client_address != client:
-                s.sendto(data, client)
+            try:
+                if client_address != client:
+                    s.sendto(data, client)
+                print(clients_address)
+            except:
+                print("Ууууупс!")
 
     # Если что-то пошло не так, выводим сообщение об остановке сервера,
     # "взводим" флаг и завершаем цикл
     except:
         print("Останавливаем сервер")
+        print(clients_address)
         stop = True
 
 s.close()
