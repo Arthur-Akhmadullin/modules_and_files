@@ -1,5 +1,6 @@
 from socket import socket, AF_INET, SOCK_DGRAM
 
+
 # Для взаимодействия с клиетами через сокеты
 s = socket(AF_INET, SOCK_DGRAM)
 s.bind(("127.0.0.1", 50000))
@@ -24,6 +25,7 @@ while not stop:
         # Из байтового представления декодируем сообщение в формат utf-8
         print(data.decode("utf-8"))
         mes = "покидает нас"
+        #if quit_message == True:
         if mes in data.decode("utf-8"):
             clients_address.remove(client_address)
 

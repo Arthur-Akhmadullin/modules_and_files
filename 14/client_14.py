@@ -14,6 +14,7 @@ s.setblocking(0)
 stop = False
 connection = False
 name_of_participant = input("Имя нового участника чата: ")
+quit_message = False
 
 def receving (name, sock):
     while stop == False:
@@ -36,6 +37,7 @@ while stop == False:
             if message != "":
                 s.sendto((name_of_participant + " пишет: " + message).encode("utf-8"), server)
         except:
+            quit_message = True
             s.sendto((name_of_participant + " покидает нас").encode("utf-8"), server)
             stop = True
 
